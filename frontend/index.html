@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Gap Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Skill Gap Analyzer</h1>
+<p>AI-like system for student skill evaluation</p>
+
+    <div class="card">
+
+        <label>Select Role</label>
+        <select id="role">
+            <option>Data Analyst</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Mechanical Engineer</option>
+            <option>Civil Engineer</option>
+            <option>Electrical Engineer</option>
+            <option>Electronics Engineer</option>
+            <option>Teacher</option>
+            <option>Business Analyst</option>
+        </select>
+
+        <label>Enter Your Skills</label>
+        <input id="skills" placeholder="e.g. Python, SQL, Excel">
+
+        <button onclick="analyze()">Analyze Skills</button>
+        <button onclick="clearData()">Clear</button>
+
+        <!-- RESULT -->
+        <div id="result"></div>
+
+        
+        
+        <ul id="suggestions"></ul>
+
+    </div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
